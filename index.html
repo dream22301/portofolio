@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of a Junior Web Developer — showcasing projects, skills, and contact information." />
+    <title>dream22301 — Junior Web Developer</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>dream22301<span class="logo-slash">/</span><span
+                    class="logo-bracket">&gt;</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+
+        <div class="hero-content container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Portofolio</span>
+            </div>
+
+            <h1 class="hero-title">
+                Halo, Saya <span class="gradient-text">Brilliant</span>
+            </h1>
+            <h2 class="hero-subtitle">
+                Saya Bisa <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+                Saya adalah Junior Web Dev yang sangat suka akan membuat Aplikasi, Web, Game
+            </p>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="ri-eye-line"></i> Lihat Projek Saya
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="ri-send-plane-line"></i> Kontak Saya
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1 Tahun</span>
+                    <span class="stat-label">Lama belajar pemrograman</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Projects yang saya buat</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Bahasa pemrograman yang saya gunakan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll down</span>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Tentang Saya</span>
+                <h2 class="section-title">Sedikit Tentang <span class="gradient-text">Saya</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrap reveal">
+                    <div class="about-image-inner">
+                        <div class="about-avatar">
+                            <div class="avatar-placeholder">
+                                <img src="billy.jpeg" alt="">
+                            </div>
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-tech-tag tag-1">HTML</div>
+                            <div class="avatar-tech-tag tag-2">CSS</div>
+                            <div class="avatar-tech-tag tag-3">JS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        Halo! Saya seorang junior web developer dengan keinginan belajar pemrograman sebanyak mungkin.
+                    </p>
+                    <p class="about-body">
+                        Saya Memulai perjalanan pemrograman saya mulai dari Html dan Css untuk pemrograman web lalu mencoba membuat game menggunakan game
+                        engine godot yang menggunakan bahasa gdscript lalu saya mencoba membuat program sederhana menggunakan python seperti program kasir,
+                        saya juga pernah membuat aplikasi menggunakan flutter.
+                    </p>
+                    <p class="about-body">
+                        Saat Saya tidak melakukan pemrograman, Saya mencoba melihat bahasa pemrograman lainnya yang tidak familiar bagi Saya
+                        seperti Rust, Ruby, dan Golang, Saya mencari tahu apa isi di dalam bahasa pemrograman tersebut.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="ri-map-pin-2-line"></i>
+                            <span>Indonesia</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ri-graduation-cap-line"></i>
+                            <span>Belajar Sendiri &amp; Terus Belajar</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ri-heart-line"></i>
+                            <span>Menyukai Komputer Dari Kecil</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary" id="downloadCv">
+                        <i class="ri-download-2-line"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Pemrograman <span class="gradient-text">Yang Saya Kuasai</span></h2>
+                <p class="section-desc">Bahasa Pemrograman dan Software Yang Saya Gunakan</p>
+            </div>
+
+            <div class="skills-categories reveal">
+                <button class="skill-cat-btn active" data-cat="all">All</button>
+                <button class="skill-cat-btn" data-cat="frontend">Frontend</button>
+                <button class="skill-cat-btn" data-cat="backend">Backend</button>
+                <button class="skill-cat-btn" data-cat="tools">Tools</button>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Frontend -->
+                <div class="skill-card reveal" data-cat="frontend">
+                    <div class="skill-icon" style="--icon-color: #E44D26;">
+                        <i class="ri-html5-line"></i>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="frontend">
+                    <div class="skill-icon" style="--icon-color: #264DE4;">
+                        <i class="ri-css3-line"></i>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="frontend">
+                    <div class="skill-icon" style="--icon-color: #F7DF1E;">
+                        <i class="ri-javascript-line"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="frontend">
+                    <div class="skill-icon" style="--icon-color: #38BDF8;">
+                        <i class="ri-layout-4-line"></i>
+                    </div>
+                    <span class="skill-name">Tailwind CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 60%;"></div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card reveal" data-cat="backend">
+                    <div class="skill-icon" style="--icon-color: #FF2D20;">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+                    <span class="skill-name">PHP / Laravel</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 72%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="backend">
+                    <div class="skill-icon" style="--icon-color: #4479A1;">
+                        <i class="ri-database-2-line"></i>
+                    </div>
+                    <span class="skill-name">MySQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 70%;"></div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card reveal" data-cat="tools">
+                    <div class="skill-icon" style="--icon-color: #F05032;">
+                        <i class="ri-git-branch-line"></i>
+                    </div>
+                    <span class="skill-name">Git</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="tools">
+                    <div class="skill-icon" style="--icon-color: #A259FF;">
+                        <i class="ri-pencil-ruler-2-line"></i>
+                    </div>
+                    <span class="skill-name">Figma</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 55%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-cat="tools">
+                    <div class="skill-icon" style="--icon-color: #007ACC;">
+                        <i class="ri-terminal-box-line"></i>
+                    </div>
+                    <span class="skill-name">VS Code</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--fill: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projek <span class="gradient-text">Saya</span></h2>
+                <p class="section-desc">Projek yang saya buat</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal featured">
+                    <div class="project-image">
+                        <div class="project-img-placeholder project-img-1">
+                            <i class="ri-layout-4-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/dream22301/web-project.git" class="project-link-btn" aria-label="View source code">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-num">01</span>
+                            <span class="project-badge">Featured</span>
+                        </div>
+                        <h3 class="project-title">Admin Dashboard SMKN</h3>
+                        <p class="project-desc">
+                            Admin Dashboard yang responsive untuk membuat jadwal, membuat pengumuman, dan membuat quiz. Admin Dashboard ini menyambung
+                            dengan project flutter
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Blade</span>
+                            <span class="tag">TailwindCSS</span>
+                            <span class="tag">Alpine.js</span>
+                            <span class="tag">Laravel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-img-placeholder project-img-2">
+                            <i class="ri-game-fill"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/dream22301/Project_Nature" class="project-link-btn" aria-label="View source code">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-num">02</span>
+                        </div>
+                        <h3 class="project-title">Project Nature Game</h3>
+                        <p class="project-desc">
+                            Project simple game yang saya dan teman saya buat untuk mengisi waktu luang.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">GDScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-img-placeholder project-img-3">
+                            <i class="ri-book-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/dream22301/belajar_laravel.git" class="project-link-btn" aria-label="View source code">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-num">03</span>
+                        </div>
+                        <h3 class="project-title">Belajar_Laravel</h3>
+                        <p class="project-desc">
+                            Projek dikhususkan untuk belajar laravel, pembelajaran laravel saya dimulai dari sini
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Blade</span>
+                            <span class="tag">Laravel</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta reveal">
+                <a href="https://github.com/dream22301" target="_blank" class="btn btn-outline">
+                    <i class="ri-github-line"></i> Lihat Semua di GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Kontak</span>
+                <h2 class="section-title">Kontak <span class="gradient-text">Saya</span></h2>
+                <p class="section-desc">Punya ide proyek? Mari kita bahas.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Hubungi Saya</h3>
+                    <p>
+                        Saat ini saya sedang mencari peluang baru. Baik itu proyek, pekerjaan, atau sekadar obrolan santai - inbox saya selalu terbuka!
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brilliantprincoekananda2009@gmail.com" class="contact-link-item">
+                            <div class="contact-icon"><i class="ri-mail-line"></i></div>
+                            <div>
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">brilliantprincoekananda2009@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/dream22301" target="_blank" class="contact-link-item">
+                            <div class="contact-icon"><i class="ri-github-line"></i></div>
+                            <div>
+                                <span class="contact-link-label">GitHub</span>
+                                <span class="contact-link-value">github.com/dream22301</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Billy" required />
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="billy@example.com" required />
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek yang Anda buat..."
+                            required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <i class="ri-send-plane-fill"></i>
+                        <span>Kirim Pesan</span>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="ri-checkbox-circle-fill"></i> Message sent! I'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>dream22301<span class="logo-slash">/</span><span
+                        class="logo-bracket">&gt;</span>
+                </a>
+                <p class="footer-copy">© 2026 dream22301.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/dream22301" target="_blank" aria-label="GitHub"><i class="ri-github-line"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brilliantprincoekananda2009@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
