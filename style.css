@@ -1315,3 +1315,265 @@ button {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ============================================================
+   PRINT STYLES — clean PDF output
+   ============================================================ */
+@media print {
+
+  /* ── 1. Page setup ── */
+  @page {
+    size: A4;
+    margin: 1.5cm 1.8cm;
+  }
+
+  /* ── 2. Reset background & text to readable light theme ── */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    animation: none !important;
+    transition: none !important;
+    /* Force browsers to print background colors */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  /* ── 3. Show all .reveal elements (bypass JS scroll gate) ── */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* ── 4. Hide interactive / decorative chrome ── */
+  .navbar,
+  .hamburger,
+  .back-to-top,
+  .scroll-indicator,
+  .hero-orb,
+  .hero-bg-grid,
+  .avatar-ring,
+  .badge-dot,
+  .project-overlay,
+  .skills-categories,
+  .contact-form,
+  .hero-cta,
+  .projects-cta,
+  #downloadCv {
+    display: none !important;
+  }
+
+  /* ── 5. Container: full width ── */
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* ── 6. Section spacing ── */
+  .section {
+    padding: 1.5rem 0 !important;
+  }
+
+  /* ── 7. Fix gradient text (transparent fill breaks on print) ── */
+  .gradient-text,
+  .stat-number,
+  .logo-bracket,
+  .logo-slash {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #5b21b6 !important;
+    background-clip: unset !important;
+    color: #5b21b6 !important;
+  }
+
+  /* ── 8. Colour overrides for dark-mode elements ── */
+  .section-tag {
+    color: #0891b2 !important;
+    border-color: #0891b2 !important;
+    background: #ecfeff !important;
+  }
+
+  .section-title,
+  .hero-title,
+  .about-lead,
+  .project-title,
+  .contact-info h3 {
+    color: #111 !important;
+  }
+
+  .section-desc,
+  .about-body,
+  .hero-desc,
+  .project-desc,
+  .stat-label,
+  .contact-link-label,
+  .footer-copy,
+  .detail-item,
+  .hero-subtitle {
+    color: #444 !important;
+  }
+
+  .tag {
+    color: #333 !important;
+    border-color: #bbb !important;
+    background: #f3f4f6 !important;
+  }
+
+  /* ── 9. Hero section — show as compact header block ── */
+  .hero {
+    min-height: auto !important;
+    padding: 1rem 0 0.5rem !important;
+    page-break-after: avoid;
+  }
+
+  .hero-badge {
+    color: #0891b2 !important;
+    border-color: #0891b2 !important;
+    background: #ecfeff !important;
+  }
+
+  .hero-stats {
+    border-color: #ddd !important;
+    background: #f9fafb !important;
+    gap: 1.5rem;
+  }
+
+  .stat-divider { background: #ddd !important; }
+
+  .cursor { display: none !important; }
+
+  /* ── 10. About — stack single-column ── */
+  .about        { background: #fff !important; }
+  .about-grid   { grid-template-columns: 1fr !important; gap: 1.5rem; }
+  .about-image-wrap { display: none !important; }
+
+  .avatar-placeholder {
+    border-color: #ddd !important;
+    color: #999 !important;
+  }
+
+  .avatar-tech-tag {
+    background: #f3f4f6 !important;
+    border-color: #ddd !important;
+    color: #555 !important;
+  }
+
+  .detail-item i { color: #5b21b6 !important; }
+
+  /* ── 11. Skills ── */
+  .skill-card {
+    background: #f9fafb !important;
+    border: 1px solid #ddd !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem;
+  }
+
+  .skill-bar { background: #e5e7eb !important; }
+
+  .skill-fill {
+    /* Print the filled amount directly — no animation */
+    width: var(--fill) !important;
+    background: #5b21b6 !important;
+  }
+
+  .skill-name { color: #111 !important; }
+
+  /* ── 12. Projects — stack single-column ── */
+  .projects { background: #fff !important; }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .project-card,
+  .project-card.featured {
+    flex-direction: column !important;
+    border: 1px solid #ddd !important;
+    background: #f9fafb !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .project-card.featured .project-image { flex: unset !important; }
+
+  .project-img-placeholder {
+    min-height: 80px !important;
+    font-size: 2.5rem !important;
+    color: #9ca3af !important;
+    background: #f3f4f6 !important;
+  }
+
+  .project-badge {
+    background: #ede9fe !important;
+    color: #5b21b6 !important;
+    border-color: #c4b5fd !important;
+  }
+
+  .project-num { color: #9ca3af !important; }
+
+  /* ── 13. Contact — show info only, hide form ── */
+  .contact-grid { grid-template-columns: 1fr !important; }
+
+  .contact-link-item {
+    background: #f9fafb !important;
+    border-color: #ddd !important;
+  }
+
+  .contact-icon {
+    background: #5b21b6 !important;
+  }
+
+  .contact-link-value { color: #111 !important; }
+
+  /* ── 14. Footer ── */
+  .footer {
+    background: #fff !important;
+    border-top: 1px solid #ddd !important;
+    padding: 0.75rem 0;
+  }
+
+  .footer-socials { display: none !important; }
+  .footer-copy    { color: #888 !important; }
+
+  /* ── 15. Page break hints ── */
+  #about    { page-break-before: always; }
+  #skills   { page-break-before: auto; }
+  #projects { page-break-before: always; }
+  #contact  { page-break-before: always; }
+
+  /* ── 16. Links — show URLs inline ── */
+  a[href^="mailto"]::after,
+  a[href^="https"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+  }
+
+  /* ── 17. Buttons — clean print look ── */
+  .btn {
+    border: 1px solid #bbb !important;
+    color: #333 !important;
+    background: transparent !important;
+    padding: 0.3rem 0.8rem !important;
+    font-size: 9pt !important;
+  }
+}
